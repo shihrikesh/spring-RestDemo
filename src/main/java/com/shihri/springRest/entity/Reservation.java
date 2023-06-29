@@ -1,4 +1,4 @@
-package com.shihri.springRest.data;
+package com.shihri.springRest.entity;
 
 import javax.persistence.*;
 import java.util.Date;

@@ -1,4 +1,4 @@
-package com.shihri.springRest.bussiness;
+package com.shihri.springRest.services;
 
 import java.util.Date;
 

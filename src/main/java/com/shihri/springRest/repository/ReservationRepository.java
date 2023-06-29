@@ -1,6 +1,6 @@
 package com.shihri.springRest.repository;
 
-import com.shihri.springRest.data.Reservation;
+import com.shihri.springRest.entity.Reservation;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,10 +1,10 @@
 package com.shihri.springRest.util;
 
-import com.shihri.springRest.bussiness.ReservationService;
-import com.shihri.springRest.bussiness.RoomReservation;
-import com.shihri.springRest.data.Guest;
-import com.shihri.springRest.data.Reservation;
-import com.shihri.springRest.data.Room;
+import com.shihri.springRest.services.ReservationService;
+import com.shihri.springRest.services.RoomReservation;
+import com.shihri.springRest.entity.Guest;
+import com.shihri.springRest.entity.Reservation;
+import com.shihri.springRest.entity.Room;
 import com.shihri.springRest.repository.GuestRepository;
 import com.shihri.springRest.repository.ReservationRepository;
 import com.shihri.springRest.repository.RoomRepository;
