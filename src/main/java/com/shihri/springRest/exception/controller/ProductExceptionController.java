@@ -13,11 +13,12 @@ public class ProductExceptionController {
 
     @ExceptionHandler(value = ProductNotFoundException.class)
     public ResponseEntity<Object> exception(ProductNotFoundException exception){
-        return new ResponseEntity<>(" No product Found ",  HttpStatus.NOT_FOUND);
+        return new ResponseEntity<>(exception.getMessage(),  HttpStatus.NOT_FOUND);
     }
+
 
     @ExceptionHandler(value = NoSuchElementException.class)
     public ResponseEntity<Object> NoUserFoundException(NoSuchElementException exception){
-        return new ResponseEntity<>(" No User Found ",  HttpStatus.NOT_FOUND);
+        return new ResponseEntity<>(exception.getMessage(),  HttpStatus.NOT_FOUND);
     }
 }

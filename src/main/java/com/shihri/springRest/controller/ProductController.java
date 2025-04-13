@@ -16,7 +16,7 @@ public class ProductController {
     @GetMapping(value = "/products/{id}", produces = "Application/json")
     public ResponseEntity<Object> getProducts(@PathVariable String id) {
 
-        if (!Objects.equals(id, "1")) throw new ProductNotFoundException();
+        if (!Objects.equals(id, "1")) throw new ProductNotFoundException("Product Not Found");
         return new ResponseEntity<>("Product is " + id, HttpStatus.OK);
     }
 }
