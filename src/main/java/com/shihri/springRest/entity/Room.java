@@ -1,9 +1,15 @@
 package com.shihri.springRest.entity;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "ROOM")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Room {
 
     @Id
@@ -17,45 +23,4 @@ public class Room {
     @Column(name = "BED_INFO")
     private String bedInfo;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getRoomNumber() {
-        return roomNumber;
-    }
-
-    public void setRoomNumber(String roomNumber) {
-        this.roomNumber = roomNumber;
-    }
-
-    public String getBedInfo() {
-        return bedInfo;
-    }
-
-    public void setBedInfo(String bedInfo) {
-        this.bedInfo = bedInfo;
-    }
-
-    @Override
-    public String toString() {
-        return "Room{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", roomNumber='" + roomNumber + '\'' +
-                ", bedInfo=" + bedInfo +
-                '}';
-    }
 }

@@ -1,10 +1,17 @@
 package com.shihri.springRest.entity;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.util.Date;
 
 @Entity
 @Table(name = "RESERVATION")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Reservation {
 
     @Id
@@ -18,45 +25,4 @@ public class Reservation {
     @Column(name = "RES_DATE")
     private Date reservationDate;
 
-    public Long getId() {
-        return id;
-    }
-
-    @Override
-    public String toString() {
-        return "Reservation{" +
-                "id=" + id +
-                ", roomId=" + roomId +
-                ", guestId=" + guestId +
-                ", reservationDate=" + reservationDate +
-                '}';
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Long getRoomId() {
-        return roomId;
-    }
-
-    public void setRoomId(Long roomId) {
-        this.roomId = roomId;
-    }
-
-    public Long getGuestId() {
-        return guestId;
-    }
-
-    public void setGuestId(Long guestId) {
-        this.guestId = guestId;
-    }
-
-    public Date getReservationDate() {
-        return reservationDate;
-    }
-
-    public void setReservationDate(Date reservationDate) {
-        this.reservationDate = reservationDate;
-    }
 }
